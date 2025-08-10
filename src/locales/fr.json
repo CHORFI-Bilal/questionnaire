@@ -1,0 +1,88 @@
+{
+  "navbar": {
+    "ministry": "Ministère de l'Enseignement Supérieur et de la Recherche Scientifique",
+    "university": "Université Chahid Sheikh Larbi Tebessi - Tebessa",
+    "faculty": "Faculté des Sciences Économiques, Commerciales et des Sciences de Gestion",
+    "department": "Département des Sciences de Gestion",
+    "specialty": "Spécialité Gestion Financière"
+  },
+  "home": {
+    "title": "Questionnaire en ligne",
+    "message": "Chers collègues:\nDans le cadre de la préparation d'une thèse de doctorat intitulée : \"Le rôle du contrôle interne dans l'activation de la gouvernance d'entreprise dans les institutions économiques publiques du secteur des transports - une étude de cas des institutions publiques de transport urbain et semi-urbain (ETUS)\", nous vous présentons ce questionnaire, qui est l'un des outils utilisés pour collecter des données primaires dans la recherche scientifique académique. Nous vous demandons de bien vouloir répondre à toutes les questions des axes du questionnaire avec précision et objectivité, sachant que vos réponses sont utilisées uniquement à des fins de recherche scientifique.\nChercheur\nCHORFI Bilel",
+    "button": "Commencer le questionnaire"
+  }, 
+  "demographic": {
+    "title": "Caractéristiques démographiques :",
+    "gender": "Genre",
+    "genderOptions": {
+      "male": "Masculin",
+      "female": "Féminin"
+    },
+    "age": "Âge",
+    "ageOptions": {
+      "under30": "Moins de 30 ans",
+      "30to40": "30 à moins de 40 ans",
+      "40to50": "40 à moins de 50 ans",
+      "50to60": "50 à 60 ans",
+      "over60": "Plus de 60 ans"
+    },
+    "education": "Niveau d'éducation",
+    "educationOptions": {
+      "technical": "Technicien supérieur",
+      "bachelor": "Licence",
+      "master": "Master",
+      "phd": "Doctorat"
+    },
+    "experience": "Années d'expérience",
+    "experienceOptions": {
+      "under5": "Moins de 5 ans",
+      "5to10": "5 à moins de 10 ans",
+      "10to15": "10 à moins de 15 ans",
+      "over15": "Plus de 15 ans"
+    },
+    "position": "Poste",
+    "positionOptions": {
+      "chairman": "Président du conseil",
+      "board_member": "Membre du conseil",
+      "director": "Directeur général",
+      "manager": "Manager",
+      "department_head": "Chef de département",
+      "accountant": "Comptable",
+      "legal": "Responsable des affaires juridiques",
+      "auditor": "Auditeur"
+    },
+    "selectOption": "Sélectionner...",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+
+  "survey_title": "Questionnaire de contrôle interne",
+  "section_progress": "Axe {{current}} sur {{total}}",
+  "buttons": {
+    "previous": "Précédent",
+    "next": "Suivant",
+    "submit": "Soumettre",
+    "close": "Fermer"
+  },
+  "answers": {
+    "strongly_agree": "Tout à fait d'accord",
+    "agree": "D'accord",
+    "neutral": "Neutre",
+    "disagree": "Pas d'accord",
+    "strongly_disagree": "Pas du tout d'accord"
+  },
+  "thank_you_message": "Nous vous remercions chaleureusement pour le temps précieux et les efforts que vous avez consacrés à remplir ce questionnaire.",
+  "sections": {
+    "control_environment": {
+      "title": "Axe 1: Environnement de contrôle (Control Environment)",
+      "questions": {
+        "q1": "La direction générale de l'ETUS adhère à l'intégrité et aux valeurs éthiques, et les ancre comme partie intégrante de la culture de l'entreprise.",
+        "q2": "Le conseil d'administration ou l'organe de surveillance de l'ETUS exerce un contrôle indépendant et efficace sur le développement et la mise en œuvre du système de contrôle interne.",
+        "q3": "La direction de l'ETUS définit la structure organisationnelle, les lignes d'autorité et de responsabilité, et les rapports nécessaires pour permettre l'exécution efficace des tâches de contrôle.",
+        "q4": "La direction de l'ETUS démontre son engagement à recruter, développer et retenir des employés compétents, y compris en fournissant une formation continue.",
+        "q5": "L'ETUS tient les individus responsables de leurs responsabilités en matière de contrôle interne, conformément aux objectifs définis."
+      }
+    }
+  
+}
+}

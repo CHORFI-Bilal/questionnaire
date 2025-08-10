@@ -1,0 +1,89 @@
+{
+  "navbar": {
+    "ministry": "Ministry of Higher Education and Scientific Research",
+    "university": "Chahid Sheikh Larbi Tebessi University - Tebessa",
+    "faculty": "Faculty of Economic, Commercial and Management Sciences",
+    "department": "Department of Management Sciences",
+    "specialty": "Financial Management Specialty"
+  },
+  "home": {
+    "title": " Online Survey",
+    "message": "Dear colleagues:\nAs part of the preparation for a PhD thesis entitled: \"The role of internal control in activating corporate governance in public economic institutions in the transport sector - a case study of public institutions for urban and semi-urban transport (ETUS)\", we present to you this questionnaire, which is one of the tools used to collect primary data in academic scientific research. We kindly ask you to answer all the questions in the questionnaire axes accurately and objectively, knowing that your answers are used only for scientific research purposes.\nResearcher\nCHORFI Bilel",
+    "button": "Start Survey"
+  },
+   "demographic": {
+    "title": "Demographic Characteristics:",
+    "gender": "Gender",
+    "genderOptions": {
+      "male": "Male",
+      "female": "Female"
+    },
+    "age": "Age",
+    "ageOptions": {
+      "under30": "Under 30 years",
+      "30to40": "30 to less than 40 years",
+      "40to50": "40 to less than 50 years",
+      "50to60": "50 to 60 years",
+      "over60": "Over 60 years"
+    },
+    "education": "Education Level",
+    "educationOptions": {
+      "technical": "Higher Technical",
+      "bachelor": "Bachelor's",
+      "master": "Master's",
+      "phd": "PhD"
+    },
+    "experience": "Years of Experience",
+    "experienceOptions": {
+      "under5": "Less than 5 years",
+      "5to10": "5 to less than 10 years",
+      "10to15": "10 to less than 15 years",
+      "over15": "More than 15 years"
+    },
+    "position": "Job Position",
+    "positionOptions": {
+      "chairman": "Chairman of the Board",
+      "board_member": "Board Member",
+      "director": "General Director",
+      "manager": "Manager",
+      "department_head": "Department Head",
+      "accountant": "Accountant",
+      "legal": "Legal Affairs Officer",
+      "auditor": "Auditor"
+    },
+    "selectOption": "Select...",
+    "previous": "Previous",
+    "next": "Next"
+  },
+
+  
+  "survey_title": "Internal Control Questionnaire",
+  "section_progress": "Section {{current}} of {{total}}",
+  "buttons": {
+    "previous": "Previous",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close"
+  },
+  "answers": {
+    "strongly_agree": "Strongly agree",
+    "agree": "Agree",
+    "neutral": "Neutral",
+    "disagree": "Disagree",
+    "strongly_disagree": "Strongly disagree"
+  },
+  "thank_you_message": "We sincerely thank you for your valuable time and effort in completing this questionnaire.",
+  "sections": {
+    "control_environment": {
+      "title": "Axis 1: Control Environment",
+      "questions": {
+        "q1": "The general management of ETUS adheres to integrity and ethical values, and establishes them as a fundamental part of the corporate culture.",
+        "q2": "The board of directors or supervisory body of ETUS exercises independent and effective oversight over the development and implementation of the internal control system.",
+        "q3": "ETUS management defines the organizational structure, lines of authority and responsibility, and necessary reporting to enable effective execution of control tasks.",
+        "q4": "ETUS management demonstrates commitment to recruiting, developing and retaining competent employees, including providing ongoing training.",
+        "q5": "ETUS holds individuals accountable for their internal control responsibilities, consistent with defined objectives."
+      }
+    }
+  
+}
+}
