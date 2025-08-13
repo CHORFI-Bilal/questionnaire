@@ -1,13 +1,14 @@
+// src/components/DemographicForm.jsx
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faVenusMars, 
-  faUser, 
-  faGraduationCap, 
-  faBriefcase, 
-  faIdCard 
+import {
+  faVenusMars,
+  faUser,
+  faGraduationCap,
+  faBriefcase,
+  faIdCard
 } from '@fortawesome/free-solid-svg-icons';
 
 const DemographicForm = ({ goBack, onSubmit }) => {
@@ -27,21 +28,24 @@ const DemographicForm = ({ goBack, onSubmit }) => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      onSubmit(formData);
-    }
-  };
-
   const validateForm = () => {
     return (
-      formData.gender && 
-      formData.age && 
-      formData.education && 
-      formData.experience && 
+      formData.gender &&
+      formData.age &&
+      formData.education &&
+      formData.experience &&
       formData.position
     );
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validateForm()) {
+      alert(t('please_fill_all'));
+      return;
+    }
+    // Ne pas reset ici — SurveyFlow garde le state global
+    onSubmit(formData);
   };
 
   return (
@@ -50,13 +54,14 @@ const DemographicForm = ({ goBack, onSubmit }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
+      dir={isArabic ? 'rtl' : 'ltr'}
     >
       <h1 style={{ fontFamily: isArabic ? 'var(--font-arabic)' : 'var(--font-latin)' }}>
         {t('demographic.title')}
       </h1>
 
       <form onSubmit={handleSubmit} className="demographic-form">
-        {/* Gender Field */}
+        {/* Gender */}
         <div className="form-group">
           <label className="form-label">
             <FontAwesomeIcon icon={faVenusMars} />
@@ -80,7 +85,7 @@ const DemographicForm = ({ goBack, onSubmit }) => {
           </div>
         </div>
 
-        {/* Age Field */}
+        {/* Age */}
         <div className="form-group">
           <label className="form-label">
             <FontAwesomeIcon icon={faUser} />
@@ -102,7 +107,7 @@ const DemographicForm = ({ goBack, onSubmit }) => {
           </select>
         </div>
 
-        {/* Education Field */}
+        {/* Education */}
         <div className="form-group">
           <label className="form-label">
             <FontAwesomeIcon icon={faGraduationCap} />
@@ -124,7 +129,7 @@ const DemographicForm = ({ goBack, onSubmit }) => {
           </select>
         </div>
 
-        {/* Experience Field */}
+        {/* Experience */}
         <div className="form-group">
           <label className="form-label">
             <FontAwesomeIcon icon={faBriefcase} />
@@ -146,7 +151,7 @@ const DemographicForm = ({ goBack, onSubmit }) => {
           </select>
         </div>
 
-        {/* Position Field */}
+        {/* Position */}
         <div className="form-group">
           <label className="form-label">
             <FontAwesomeIcon icon={faIdCard} />
@@ -172,13 +177,13 @@ const DemographicForm = ({ goBack, onSubmit }) => {
           <motion.button
             type="button"
             className="btn btn--secondary"
-            onClick={goBack}
+            onClick={goBack || (() => window.history.back())}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             {t('demographic.previous')}
           </motion.button>
-          
+
           <motion.button
             type="submit"
             className="btn btn--primary"
